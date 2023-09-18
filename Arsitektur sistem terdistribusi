@@ -1,0 +1,75 @@
+Arsitektur sistem terdistribusi merupakan fondasi struktur dan organisasi dalam sistem komputasi terdistribusi. Terdapat dua aspek utama dari arsitektur ini: arsitektur logis (software) dan arsitektur fisik (system).
+
+Arsitektur Logis (Software Architecture):
+
+- Merupakan organisasi logika dari komponen-komponen perangkat lunak dalam sistem terdistribusi.
+- Komponen-komponen ini berupa unit modular yang dapat diproses di sistem yang berbeda.
+- Metode komunikasi termasuk Remote Procedure Call (RPC) dan message passing.
+- Jenis model arsitektur logis mencakup Layered Architectures, Object-base Architectures, Data-Center Architectures, dan Event-based Architectures.
+
+Layered Architectures:
+
+- Mengorganisir komponen-komponen dalam lapisan-lapisan fungsi dan service.
+- Contohnya termasuk sistem operasi (Windows, Linux) dan protokol jaringan (OSI, TCP/IP).
+
+Object-base Architectures:
+
+- Setiap objek koresponden dengan komponen, terkoneksi melalui mekanisme procedure call.
+- Digunakan dalam aplikasi perangkat lunak skala besar.
+
+Data-Center Architectures:
+
+-Memperlakukan data center sebagai gudang data, mengelola pengumpulan, pengolahan, penyimpanan, dan penemuan kembali data.
+
+Event-based Architectures:
+
+- Proses berbasis propagasi event, memungkinkan proses untuk berlangganan event tertentu.
+
+Arsitektur Fisik (System Architecture):
+
+- Melibatkan peletakan mesin dan komponen perangkat lunak pada mesin sesungguhnya.
+- Meliputi Centralized Architectures (Client-Server), Decentralized Architectures, dan Hybrid Architectures.
+
+Trend Perkembangan:
+
+-Arsitektur terus berkembang dengan munculnya teknologi baru dan kebutuhan sistem yang semakin kompleks.
+-Terdapat variasi seperti P2P, collaborative distributed systems, dan hybrid architectures.
+
+Adaptive Software:
+
+- Penting untuk memungkinkan sistem beradaptasi terhadap perubahan lingkungan.
+- Teknik dasar termasuk separation of concerns, computational reflection, dan component-based design.
+
+Dalam pengembangan sistem terdistribusi, pemilihan arsitektur yang tepat sangat penting untuk memastikan sistem berjalan dengan efisien dan memenuhi kebutuhan aplikasi. Selain itu, perubahan lingkungan dan kebutuhan aplikasi yang berubah juga memerlukan kemampuan sistem untuk beradaptasi secara fleksibel.
+
+Perkembangan Arsitektur sistem terdistribusi
+1. Awal Mula (Akhir Abad ke-20)
+
+1960-an hingga 1970-an: Awal mula konsep sistem terdistribusi muncul dengan proyek ARPANET, leluhur internet modern. Model klien-server mulai muncul dengan pertumbuhan jaringan.
+
+https://img.olhardigital.com.br/wp-content/uploads/2021/10/arpa.jpeg 
+
+1980-an: Pengembangan teknologi jaringan dan protokol komunikasi, seperti TCP/IP, memungkinkan pertumbuhan sistem terdistribusi.
+
+https://smkn1peusangan.sch.id/wp-content/uploads/2022/04/Pemodelan-Layer-TCP-IP.png
+
+2. Perkembangan Modern (Abad ke-21)
+
+Awal 2000-an: 
+Konsep-konsep dan ide cloud computing memang sudah ada sejak lama, namun cloud computing benar-benar lahir pada tahun 2000-an dimana pada saat itu Marc Beniof mantan Vice President Oracle mengumumkan aplikasi CRM dan bentuk SaaS (Software as a service) yang dinamakan salesforce.com. Lalu pada tahun 2005 mulai banyak bermunculan fasilitas cloud computing seperti yang digunakan Amazon.com dengan Amazon EC2-nya, Google App Engine dari Google, dan Blue Cloud Initiative besutan IBM.
+
+https://sis.binus.ac.id/wp-content/uploads/2023/04/Picture6.png
+
+2000-an: 
+Arsitektur mikro-layanan mulai mendapatkan popularitas, memungkinkan pengembangan dan pengelolaan aplikasi yang lebih fleksibel dan skalabel.
+
+https://learn.microsoft.com/id-id/azure/architecture/reference-architectures/microservices/_images/ra-sf-arch.png
+
+2010-an: 
+Serverless computing mulai berkembang, memungkinkan pengembang untuk fokus pada kode tanpa perlu memikirkan infrastruktur.
+
+https://www.xenonstack.com/hubfs/xenonstack-aws-serverless-computing.png
+
+2010-an: Internet of Things (IoT) menjadi tren yang signifikan, mendorong pengembangan arsitektur terdistribusi untuk mengelola dan menghubungkan jutaan perangkat yang terhubung.
+
+https://cdn.clickworker.com/wp-content/uploads/2020/07/Internet-of-Things-IoT.jpg
