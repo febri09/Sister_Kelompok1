@@ -29,8 +29,8 @@ https://images.spiceworks.com/wp-content/uploads/2022/01/12132657/Data-centered-
 iv) Arsitektur berbasis peristiwa (Event-based architecture)
 
 Dalam arsitektur berbasis peristiwa, seluruh komunikasi dilakukan melalui peristiwa. Ketika suatu peristiwa terjadi, sistem mendapat notifikasi. Artinya siapapun yang menerima event ini juga akan diberitahu dan mempunyai akses informasi. Terkadang, peristiwa ini berupa data, dan terkadang berupa URL ke sumber daya. Dengan demikian, penerima dapat memproses informasi yang mereka terima dan bertindak sesuai dengan itu.
-
 Salah satu keuntungan signifikan dari arsitektur berbasis peristiwa adalah komponen-komponennya digabungkan secara longgar. Pada akhirnya, ini berarti mudah untuk menambah, menghapus, dan memodifikasinya. Untuk lebih memahami hal ini, pikirkan sistem penerbit-pelanggan, bus layanan perusahaan, atau akka.io. Salah satu keuntungan dari arsitektur berbasis peristiwa adalah memungkinkan komponen heterogen untuk berkomunikasi dengan bus, apa pun protokol komunikasinya.
+https://images.spiceworks.com/wp-content/uploads/2022/01/12132850/Event-Based-Architecture.png
 
 2. Arsitektur sistem
 	Arsitektur tingkat sistem berfokus pada keseluruhan sistem dan penempatan komponen sistem terdistribusi di beberapa mesin. Arsitektur client-server dan arsitektur peer-to-peer adalah dua arsitektur tingkat sistem utama yang memiliki arti penting saat ini. Contohnya adalah sistem ecommerce yang berisi lapisan layanan, database, dan bagian depan web.
@@ -38,17 +38,16 @@ Salah satu keuntungan signifikan dari arsitektur berbasis peristiwa adalah kompo
 i) Arsitektur klien-server 
 
 Seperti namanya, arsitektur klien-server terdiri dari klien dan server. Server adalah tempat semua proses kerja berada, sedangkan klien adalah tempat pengguna berinteraksi dengan layanan dan sumber daya lainnya (server jarak jauh). Klien kemudian dapat meminta dari server, dan server akan meresponsnya. Biasanya, hanya satu server yang menangani sisi jarak jauh; namun, penggunaan beberapa server menjamin keamanan total.
-
 Arsitektur klien-server memiliki satu fitur desain standar: keamanan terpusat. Data seperti nama pengguna dan kata sandi disimpan dalam database yang aman agar pengguna server mana pun dapat mengakses informasi ini. Hal ini membuatnya lebih stabil dan aman dibandingkan peer-to-peer. Stabilitas ini berasal dari arsitektur client-server, di mana database keamanan dapat memungkinkan penggunaan sumber daya dengan cara yang lebih bermakna. Sistemnya jauh lebih stabil dan aman, meski tidak secepat server. Kerugian dari sistem terdistribusi adalah satu titik kegagalan dan tidak dapat diskalakan seperti server.
+https://images.spiceworks.com/wp-content/uploads/2022/01/12133008/Client-server-Architecture.png
 
 ii) Arsitektur peer-to-peer (P2P).
 
 Jaringan peer-to-peer, juga disebut jaringan (P2P), bekerja berdasarkan konsep tidak adanya kendali pusat dalam sistem terdistribusi. Sebuah node dapat bertindak sebagai klien atau server kapan saja setelah bergabung dengan jaringan. Node yang meminta sesuatu disebut klien, dan simpul yang menyediakan sesuatu disebut server. Secara umum, setiap node disebut peer.
-
 Jika sebuah node baru ingin menyediakan layanan, ia dapat melakukannya dengan dua cara. Salah satu caranya adalah dengan mendaftar ke server pencarian terpusat, yang kemudian akan mengarahkan node ke penyedia layanan. Cara lainnya adalah node tersebut menyiarkan permintaan layanannya ke setiap node lain di jaringan, dan node mana pun yang merespons akan menyediakan layanan yang diminta.
+https://images.spiceworks.com/wp-content/uploads/2022/01/12133121/Peer-to-Peer-Architecture.png
 
 Jaringan P2P saat ini memiliki tiga bagian terpisah:
-
 --P2P Terstruktur: Node dalam P2P terstruktur mengikuti struktur data terdistribusi yang       
                    telah ditentukan sebelumnya.
 --P2P Tidak Terstruktur: Node dalam P2P tidak terstruktur memilih tetangganya secara acak.
