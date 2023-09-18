@@ -18,12 +18,13 @@ ii) Arsitektur berbasis objek (Object-based architecture)
 
 Arsitektur berbasis objek berpusat pada susunan objek yang digabungkan secara longgar tanpa arsitektur khusus seperti lapisan. Berbeda dengan arsitektur berlapis, arsitektur berbasis objek tidak harus mengikuti langkah apa pun secara berurutan. Setiap komponen adalah sebuah objek, dan semua objek dapat berinteraksi melalui antarmuka (atau konektor). Dalam arsitektur berbasis objek, interaksi antar komponen dapat terjadi melalui pemanggilan metode langsung.
 Pada intinya, komunikasi antar objek terjadi melalui pemanggilan metode, sering disebut panggilan prosedur jarak jauh (RPC). Sistem RPC yang populer mencakup Java RMI dan Layanan Web serta Panggilan REST API. Pertimbangan desain utama dari arsitektur ini adalah bahwa arsitektur tersebut kurang terstruktur. Di sini, komponen sama dengan objek, dan konektor sama dengan RPC atau RMI.
+https://images.spiceworks.com/wp-content/uploads/2022/01/12132532/Object-based-Architecture.png
 
 iii) Arsitektur berpusat pada data (Data-centered architecture)
 
 Arsitektur pusat data bekerja pada tempat penyimpanan data pusat, baik aktif maupun pasif. Seperti kebanyakan skenario produsen-konsumen, produsen (bisnis) memproduksi barang ke penyimpanan data umum, dan konsumen (individu) dapat meminta data darinya. Terkadang, repositori pusat ini hanya berupa database sederhana.
-
 Semua komunikasi antar objek terjadi melalui sistem penyimpanan data dalam sistem yang berpusat pada data. Ini mendukung komponen penyimpanannya dengan ruang penyimpanan persisten seperti database SQL, dan sistem menyimpan semua node dalam penyimpanan data ini.
+https://images.spiceworks.com/wp-content/uploads/2022/01/12132657/Data-centered-Architecture.png
 
 iv) Arsitektur berbasis peristiwa (Event-based architecture)
 
