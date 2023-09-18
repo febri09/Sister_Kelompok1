@@ -11,13 +11,12 @@ Arsitektur -->  Suatu  rancangan  untuk  penyusunan komponen-komponen  suatu  si
 i) Arsitektur berlapis (Layered architecture)
 
 Arsitektur berlapis memberikan pendekatan modular terhadap perangkat lunak. Dengan memisahkan masing-masing komponen maka lebih efisien. Misalnya, model interkoneksi sistem terbuka (OSI) menggunakan arsitektur berlapis untuk hasil yang lebih baik. Ia melakukan ini dengan menghubungi lapisan secara berurutan, yang memungkinkannya mencapai tujuannya. Dalam beberapa kasus, penerapan arsitektur berlapis berada dalam koordinasi lintas lapisan. Di bawah lapisan silang, interaksi dapat melewati lapisan mana pun yang berdekatan hingga lapisan tersebut memenuhi permintaan dan memberikan hasil kinerja yang lebih baik.
-
 Arsitektur berlapis adalah jenis perangkat lunak yang memisahkan komponen menjadi beberapa unit. Permintaan datang dari atas ke bawah, dan tanggapannya datang dari bawah ke atas. Keuntungan dari arsitektur berlapis adalah menjaga segala sesuatunya tetap teratur dan memodifikasi setiap lapisan secara independen tanpa mempengaruhi sistem lainnya.
+https://images.spiceworks.com/wp-content/uploads/2022/01/12132414/Layered-Architecture.png
 
 ii) Arsitektur berbasis objek (Object-based architecture)
 
 Arsitektur berbasis objek berpusat pada susunan objek yang digabungkan secara longgar tanpa arsitektur khusus seperti lapisan. Berbeda dengan arsitektur berlapis, arsitektur berbasis objek tidak harus mengikuti langkah apa pun secara berurutan. Setiap komponen adalah sebuah objek, dan semua objek dapat berinteraksi melalui antarmuka (atau konektor). Dalam arsitektur berbasis objek, interaksi antar komponen dapat terjadi melalui pemanggilan metode langsung.
-
 Pada intinya, komunikasi antar objek terjadi melalui pemanggilan metode, sering disebut panggilan prosedur jarak jauh (RPC). Sistem RPC yang populer mencakup Java RMI dan Layanan Web serta Panggilan REST API. Pertimbangan desain utama dari arsitektur ini adalah bahwa arsitektur tersebut kurang terstruktur. Di sini, komponen sama dengan objek, dan konektor sama dengan RPC atau RMI.
 
 iii) Arsitektur berpusat pada data (Data-centered architecture)
