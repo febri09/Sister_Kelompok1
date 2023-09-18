@@ -1,5 +1,48 @@
-Arsitektur sistem terdistribusi adalah suatu kerangka atau struktur yang mengatur cara komponen-komponen dalam suatu sistem terhubung dan berkomunikasi satu sama lain melalui jaringan komputer. Ini memungkinkan berbagai bagian dari sistem untuk beroperasi secara terkoordinasi dan dapat memproses data atau tugas secara bersamaan.
+Arsitektur sistem terdistribusi merupakan fondasi struktur dan organisasi dalam sistem komputasi terdistribusi. Terdapat dua aspek utama dari arsitektur ini: arsitektur logis (software) dan arsitektur fisik (system).
 
+Arsitektur Logis (Software Architecture):
+
+- Merupakan organisasi logika dari komponen-komponen perangkat lunak dalam sistem terdistribusi.
+- Komponen-komponen ini berupa unit modular yang dapat diproses di sistem yang berbeda.
+- Metode komunikasi termasuk Remote Procedure Call (RPC) dan message passing.
+- Jenis model arsitektur logis mencakup Layered Architectures, Object-base Architectures, Data-Center Architectures, dan Event-based Architectures.
+
+Layered Architectures:
+
+- Mengorganisir komponen-komponen dalam lapisan-lapisan fungsi dan service.
+- Contohnya termasuk sistem operasi (Windows, Linux) dan protokol jaringan (OSI, TCP/IP).
+
+Object-base Architectures:
+
+- Setiap objek koresponden dengan komponen, terkoneksi melalui mekanisme procedure call.
+- Digunakan dalam aplikasi perangkat lunak skala besar.
+
+Data-Center Architectures:
+
+-Memperlakukan data center sebagai gudang data, mengelola pengumpulan, pengolahan, penyimpanan, dan penemuan kembali data.
+
+Event-based Architectures:
+
+- Proses berbasis propagasi event, memungkinkan proses untuk berlangganan event tertentu.
+
+Arsitektur Fisik (System Architecture):
+
+- Melibatkan peletakan mesin dan komponen perangkat lunak pada mesin sesungguhnya.
+- Meliputi Centralized Architectures (Client-Server), Decentralized Architectures, dan Hybrid Architectures.
+
+Trend Perkembangan:
+
+-Arsitektur terus berkembang dengan munculnya teknologi baru dan kebutuhan sistem yang semakin kompleks.
+-Terdapat variasi seperti P2P, collaborative distributed systems, dan hybrid architectures.
+
+Adaptive Software:
+
+- Penting untuk memungkinkan sistem beradaptasi terhadap perubahan lingkungan.
+- Teknik dasar termasuk separation of concerns, computational reflection, dan component-based design.
+
+Dalam pengembangan sistem terdistribusi, pemilihan arsitektur yang tepat sangat penting untuk memastikan sistem berjalan dengan efisien dan memenuhi kebutuhan aplikasi. Selain itu, perubahan lingkungan dan kebutuhan aplikasi yang berubah juga memerlukan kemampuan sistem untuk beradaptasi secara fleksibel.
+
+Perkembangan Arsitektur sistem terdistribusi
 1. Awal Mula (Akhir Abad ke-20)
 
 1960-an hingga 1970-an: Awal mula konsep sistem terdistribusi muncul dengan proyek ARPANET, leluhur internet modern. Model klien-server mulai muncul dengan pertumbuhan jaringan.
