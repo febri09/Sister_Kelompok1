@@ -1,118 +1,53 @@
 Arsitektur Sistem Terdistribusi
----------------------------------
 
+Arsitektur sistem terdistribusi adalah arsitektur yang memungkinkan beberapa komputer terhubung dan berkomunikasi satu sama lain untuk melakukan tugas tertentu. 
+Beberapa konsep yang terkait dengan arsitektur sistem terdistribusi antara lain:
 
-Arsitektur
-==========
+Model Client-Server
+Model client-server adalah model arsitektur sistem terdistribusi yang terdiri dari dua jenis komputer, yaitu komputer server dan komputer client. 
+Komputer server menyediakan layanan yang diminta oleh komputer client, seperti berbagi pakai berkas, data, peralatan pendukung, dan lain-lain.
 
-Definisi --> Suatu  rancangan  untuk  penyusunan komponen-komponen  suatu  sistem,  dimana  rancangan  tersebut mengidentifikasi  komponen  serta  fungsi  masing-masing  komponen, konektifitas antar komponen serta pemetaan fungsionalitas komponen.
+Contoh dari arsitektur client-server adalah web server yang menyediakan layanan web kepada komputer client seperti sistem Customer Relationship Management (CRM).
+================================================================================================================================================
+Komputasi Terdistribusi
+Komputasi terdistribusi adalah konsep yang memungkinkan beberapa komputer terhubung dan bekerja sama untuk menyelesaikan tugas tertentu. 
+Dalam komputasi terdistribusi, tugas dibagi menjadi beberapa bagian dan dikerjakan secara paralel oleh beberapa komputer.
 
-Arsitektur sistem terdistribusi --> desain sistem komputer yang terdiri dari beberapa komponen yang terhubung satu sama lain melalui jaringan komputer. Tujuan utama dari arsitektur ini adalah untuk mengoptimalkan kinerja, skalabilitas, keandalan, dan ketersediaan sistem. 
+Contoh dari komputasi terdistribusi adalah 
+Grid computing adalah paradigma dalam komputasi terdistribusi di mana sumber daya komputasi yang tersebar di berbagai lokasi fisik digabungkan 
+dan dihubungkan melalui jaringan komputer untuk bekerja sama dalam menyelesaikan tugas komputasi yang kompleks
+Cloud computing adalah model penyediaan layanan komputasi melalui internet. 
+Apache Hadoop: kerangka kerja perangkat lunak open-source yang digunakan untuk memproses data yang sangat besar secara terdistribusi.
+Apache Spark: kerangka kerja perangkat lunak open-source yang digunakan untuk memproses data secara terdistribusi.
+Docker: platform perangkat lunak yang digunakan untuk mengembangkan, menguji, dan menjalankan aplikasi dalam lingkungan terdistribusi.
+================================================================================================================================================
+Arsitektur Desentralisasi
+Arsitektur desentralisasi adalah arsitektur yang memungkinkan pemrosesan data tersebar atau disebut juga komputasi tersebar. 
+Dalam arsitektur desentralisasi, sistem terdiri dari beberapa komputer yang saling terhubung dan bekerja sama untuk menyelesaikan tugas tertentu
+================================================================================================================================================
 
-Model Arsitektur Sistem Terdistribusi
-=====================================
+Perkembangan dari Zaman ke Zaman
+Arsitektur sistem terdistribusi telah mengalami perkembangan dari zaman ke zaman. 
+Pada awalnya, arsitektur sistem terdistribusi hanya terdiri dari beberapa komputer yang terhubung satu sama lain melalui jaringan lokal. 
+Namun, dengan perkembangan teknologi jaringan, arsitektur sistem terdistribusi dapat terhubung melalui jaringan internet. 
+Selain itu, dengan adanya teknologi cloud computing, arsitektur sistem terdistribusi dapat terhubung dengan sumber daya yang terdapat di cloud.
+================================================================================================================================================
+Perkembangan Terbaru
+Arsitektur sistem terdistribusi dan komputasi terdistribusi terus berkembang seiring dengan perkembangan teknologi. 
+Beberapa perkembangan terbaru di bidang ini adalah:
 
-1) Arsitektur Logis(Software Architecture)
-   •	Organisasi logika dari komponen-komponen perangkat lunak
-   •	Komponen yang dimaksud berupa unit modular berupa interface yang dapat diproses di sistem yang berbeda
-	-> RPC (remote prosedure call), message passing
-   •	Jenis Model arsitektur logis (style)
-	-> Layered architectures
-	-> Object-base architectures
-	-> Data-Center architectures
-	-> Event-based architectures
-2) Arsitektur Fisik(System Architecture)
-   •	Peletakan mesin
-   •	Peletakan komponen  perangkat  lunak  pada  mesin  sesungguhnya
+Internet of Things (IoT): 
+IoT adalah teknologi yang memungkinkan perangkat elektronik untuk terhubung dan berkomunikasi satu sama lain melalui jaringan komputer. 
+Teknologi ini memungkinkan pengguna untuk mengontrol dan memonitor perangkat elektronik dari jarak jauh
 
+Edge Computing: 
+Edge computing adalah teknologi yang memungkinkan pemrosesan data dilakukan di dekat sumber data, sehingga mengurangi latensi dan mempercepat waktu respons. 
+Teknologi ini biasanya digunakan pada sistem yang memerlukan pemrosesan data yang sangat cepat dan akurat, seperti sistem keamanan dan sistem keuangan
+=================================================================================================================================================
+Contoh atau Tools yang Digunakan
 
-Layered Architectures
-======================
-
-Komponen-komponen pada Layered architectures diorganisasi dalam bentuk lapisan-lapisan (layer) fungsi dan service
-
-Contoh:
-
-  - Operating system (windows, linux)
-  - Network Protocol (OSI, TCP/IP)
-
-
-Object-base Architectures
-=========================
-
-Object-base architectures menggambarkan setiap objek melakukan koresponden dengan komponen, dan komponen ini terkoneksi melalui mekanisme procedure call. Bentuk sistem OA ini digunakan aplikasi perangkat lunak dalam skala besar.
-
-
-Data-center Architectures
-=========================
-
-Data center dapat dipandang sebagai gudang data (data warehouse) yang berfungsi sebagai sistem pengelolaan data mulai dari pengumpulan, pengolahan, penyimpanan hingga penemuan kembali data, serta mampu pula memberikan dukungan dalam pengambilan keputusan. Sebagai contoh adalah sistem tersebar 
-
-
-Event-based Architectures
-=========================
-
-Proses EBA pada dasarnya berdasarkan propagasi event. Proses mengeluarkan event setelah Middleware memberikan kepastian hanya proses itu saja yang bisa di subcribe untuk event yang diterima. Keuntungan EBA adalah proses bersifat loosely coupled.
-
-
-System Architecture
-===================
-1) Centralized Architectures (Client-Server)
-     Client server unggul dalam kecepatan dan mendukung jaringan besar. Kekurangan terdapat pada sisi setup yang cukup komplek, biaya tinggi dan membutuhkan sumberdaya manusia yang handal untuk mengelola. Pada model client server, terdapat perilaku yang biasa disebut request-reply behavior
-   - Application Layering
-	Model client server seiring perkembangannya mengundang perdebatan mengenai perbedaan antara client dan server itu sendiri. Pada umumnya client server architecture ditujukan untuk keperluan user access ke database, maka dari itu layered architectural style dibagi menjadi:
-	• user-interface level (display management)
-	• processing level (applications)
-	• data level (actual data that is being acted on)
-
-   - Multi-tiered Architectures
-	• 2 tier architecture
-	• Pengorganisasian paling simple dimana terdiri atas 2 type mesin
-	  - Client yang berisi implementasi program pada user-interface level
-	  - Server yang berisi implementasi program pada proses dan data level
-	• 3 tier architecture
-	• Pada keperluan khusus, kadang server juga perlu bertindak sebagai client
-	• Pada arsitektur ini, program pada processing level tidak hanya terdapat pada server yang terpisah, bahkan dapat terdistribusi pada client dan server mesin
-	• Trend perkembangan model arsitektur
-
-
-2) Decentralized ARchitectures (Peer-to-Peer)
-     Disebut sebagai Horizontal distribution. Pada arsitektur ini, secara fisik terpisah namun secara logis memiliki fungsi level yang sama (equivalent), dimana setiap mesin memproses bagiannya sendiri kemudian melakukan balancing terhadap hasil proses.Nama lain Peer-to-peer architecture
-     •	Perkembangan P2P arsitektur tidak lepas dari pertanyaan 
-	1. Bagaimana organisasi proses dalam jaringan
-	2. Sebuah proses tidak dapat berhubungan secara langsung dengan proses lain di jaringan.
-	3. Diperlukan sebuah pesan khusus untuk komunikasi proses
-     •	Structured peer-to-peer architecture : Dalam struktur ini lapisan jaringan di bangun menggunakan deterministic procedure, seperti menggunakan distributes hash table (DHT).
-     •	Unstructured peer-to-peer architecture : Dalam struktur ini menugaskan sebagian besar pada algoritma secara acak untuk membangun lapisan jaringan. Pada intinya setiap node mendata jaringan node neighboor, tetapi data node tersebut di tempuh dengan proses acak sederhana.
-     •	Topology Management of Overlay Networks : Walaupun pada structured dan unstrustured peer-to-peer System cukup jelas, namun dalam beberapa kasus masih belum lengkap. Satu kunci dari observasi adalah kehati-hatian dari proses pertukaran dan pemilihan entries dari pandangan parsial dimana topologi tertentu dapat dibangun dan dijaga konektivitasnya.
-     •	Superpeers
-
-
-3) Hybride Architectures
-     Edge-Server Systems. Sistem ini dibangun di jaringan internet dimana server di tempat kan pada edge (tepi) dari jaringan. Tujuan Edge server adalah melayani content (isi), pada saat proses filtering dan fungsi transcoding
-
-
-Contoh Arsitektur Sistem Terdistribusi
-======================================
-
-a. Jaringan Sosial (Social Networking):
-   - Facebook adalah contoh arsitektur sistem terdistribusi dalam konteks jaringan sosial.
-   - Dalam Facebook, pengguna berinteraksi dengan layanan melalui antarmuka web atau aplikasi seluler (klien).
-   - Server Facebook yang terdistribusi di seluruh dunia menyediakan data dan layanan yang diminta oleh pengguna.
-
-b. Cloud Computing:
-   - Layanan komputasi awan seperti Amazon Web Services (AWS) dan Microsoft Azure adalah contoh arsitektur sistem terdistribusi.
-   - Penyedia awan menyediakan sumber daya komputasi (server, penyimpanan, jaringan) yang dapat diakses oleh pelanggan dari lokasi mana pun melalui internet.
-
-c. Internet of Things (IoT):
-   - Sistem IoT yang menghubungkan berbagai perangkat fisik seperti sensor, peralatan rumah tangga pintar, dan kendaraan otonom adalah contoh lain dari arsitektur sistem terdistribusi.
-   - Data dari perangkat IoT dikirimkan ke server pusat untuk diproses dan dianalisis.
-
-d. Sistem Perbankan Terdistribusi:
-   - Sistem perbankan modern menggunakan arsitektur terdistribusi untuk mengelola transaksi dan menyediakan layanan perbankan online.
-   - ATM, situs web perbankan, dan aplikasi seluler adalah klien yang berkomunikasi dengan server bank yang terdistribusi.
-
-
-Kesimpulan
-==========
-Arsitektur sistem terdistribusi memungkinkan organisasi untuk meningkatkan skalabilitas, ketersediaan, dan keandalan sistem mereka dengan mendistribusikan beban kerja dan data di seluruh jaringan. Ini juga memfasilitasi kerja sama antara berbagai komponen sistem, yang merupakan elemen kunci dalam dunia teknologi modern.
+Beberapa contoh atau tools yang digunakan dalam arsitektur sistem terdistribusi antara lain:
+Apache Hadoop: digunakan untuk melakukan komputasi terdistribusi pada data yang besar.
+Apache Cassandra: digunakan untuk melakukan penyimpanan data terdistribusi.
+Docker: digunakan untuk melakukan virtualisasi pada aplikasi dan sumber daya.
+Kubernetes: digunakan untuk melakukan manajemen pada aplikasi dan sumber daya yang terdistribusi.
