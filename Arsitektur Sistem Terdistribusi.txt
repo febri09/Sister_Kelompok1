@@ -25,12 +25,19 @@ Arsitektur Desentralisasi
 Arsitektur desentralisasi adalah arsitektur yang memungkinkan pemrosesan data tersebar atau disebut juga komputasi tersebar. 
 Dalam arsitektur desentralisasi, sistem terdiri dari beberapa komputer yang saling terhubung dan bekerja sama untuk menyelesaikan tugas tertentu
 ================================================================================================================================================
+Client-Server: Arsitektur ini terdiri dari dua komponen utama, yaitu client dan server. 
 
+- Client adalah aplikasi yang meminta layanan dari server, sedangkan server adalah aplikasi yang menyediakan layanan kepada client
+- Peer-to-Peer: Arsitektur ini terdiri dari beberapa komputer yang saling terhubung dan memiliki kemampuan untuk berbagi sumber daya dan informasi tanpa adanya server sentral
+- Layered: Arsitektur ini terdiri dari beberapa lapisan atau layer yang saling terhubung dan bertanggung jawab atas tugas-tugas tertentu. Setiap layer hanya berkomunikasi dengan layer yang berada di atas atau di bawahnya
+Object-Oriented: Arsitektur ini menggunakan konsep pemrograman berorientasi objek untuk mengorganisir dan mengatur komponen-komponen sistem terdistribusi. Setiap objek memiliki kemampuan untuk berkomunikasi dengan objek lainnya
+================================================================================================================================================
 Perkembangan dari Zaman ke Zaman
 Arsitektur sistem terdistribusi telah mengalami perkembangan dari zaman ke zaman. 
 Pada awalnya, arsitektur sistem terdistribusi hanya terdiri dari beberapa komputer yang terhubung satu sama lain melalui jaringan lokal. 
 Namun, dengan perkembangan teknologi jaringan, arsitektur sistem terdistribusi dapat terhubung melalui jaringan internet. 
 Selain itu, dengan adanya teknologi cloud computing, arsitektur sistem terdistribusi dapat terhubung dengan sumber daya yang terdapat di cloud.
+
 ================================================================================================================================================
 Perkembangan Terbaru
 Arsitektur sistem terdistribusi dan komputasi terdistribusi terus berkembang seiring dengan perkembangan teknologi. 
@@ -51,3 +58,51 @@ Apache Hadoop: digunakan untuk melakukan komputasi terdistribusi pada data yang 
 Apache Cassandra: digunakan untuk melakukan penyimpanan data terdistribusi.
 Docker: digunakan untuk melakukan virtualisasi pada aplikasi dan sumber daya.
 Kubernetes: digunakan untuk melakukan manajemen pada aplikasi dan sumber daya yang terdistribusi.
+======================================================================================================================================================
+Model Arsitektur Sister
+Arsitektur Logis (Software architecture)
+
+-Organisasi logika dari komponen-komponen perangkat lunak
+-Komponen yang dimaksud berupa unit modular berupa interface yang dapat diproses di sistem yang berbeda
+-RPC (remote prosedure call), message passing
+-Jenis Model arsitektur logis (style)
+-Layered architectures
+-Object-base architectures
+-Data-Center architectures
+-Event-based architectures
+
+Arsitektur Fisik (System architecture)
+
+  - Peletakan mesin
+  - Peletakan komponen  perangkat  lunak  pada  mesin  sesungguhnya
+
+
+Layered Architectures
+
+Komponen-komponen pada Layered architectures diorganisasi dalam bentuk lapisan-lapisan (layer) fungsi dan service
+
+Contoh:
+  - Operating system (windows, linux)
+  - Network Protocol (OSI, TCP/IP)
+
+Object-base Architectures
+Object-base architectures menggambarkan setiap objek melakukan koresponden dengan komponen, dan komponen ini terkoneksi melalui mekanisme procedure call. Bentuk sistem OA ini digunakan aplikasi perangkat lunak dalam skala besar.
+
+Data-center Architectures
+Data center dapat dipandang sebagai gudang data (data warehouse) yang berfungsi sebagai sistem pengelolaan data mulai dari pengumpulan, pengolahan, penyimpanan hingga penemuan kembali data, serta mampu pula memberikan dukungan dalam pengambilan keputusan. Sebagai contoh adalah sistem tersebar berbasis web.
+
+System Architecture
+
+Centralized Architectures (Client-Server)
+  - Application Layering
+  - Multi-tiered Architectures
+
+Decentralized Architectures
+  - Structured P2P (Peer-to-Peer) Architectures
+  - Unstructured P2P Architectures
+  - Topology Management of Overlay Networks
+  - Superpeers
+
+Hybrid Architectures
+  - Edge-Server Systems
+  - Collaborative Distributed Systems
